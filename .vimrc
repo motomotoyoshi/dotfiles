@@ -20,7 +20,8 @@ set wrapscan
 set incsearch
 " 検索結果をハイライト表示
 set hlsearch
-
+"ハイライトを消す
+nmap <silent> <Esc><Esc> :nohlsearch<CR>
 "------------------------------
 "表示設定
 "------------------------------
@@ -56,20 +57,14 @@ set number
 set clipboard=unnamed,unnamedplus
 "シンタックスハイライト
 syntax on
-"現在の行を強調表示
-"set cursorline
-"現在の行を強調表示(縦)
-"set cursorcolumn
 "行末の1文字先までカーソルを移動できるように
 set virtualedit=onemore
 "ビープ音を可視化
-set visualbell
+"set visualbell
 "コマンドラインの補完
 set wildmode=list:longest
-
-"ハイライトを消す
-nmap <silent> <Esc><Esc> :nohlsearch<CR>
-
+"マウスを使う
+set mouse=a
 "------------------------------
 "括弧
 "------------------------------
