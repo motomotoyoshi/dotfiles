@@ -65,6 +65,8 @@ set virtualedit=onemore
 set wildmode=list:longest
 "マウスを使う
 set mouse=a
+"tmux内vimのウィンドウサイズをマウスで変更する
+set ttymouse=xterm2
 "------------------------------
 "括弧
 "------------------------------
