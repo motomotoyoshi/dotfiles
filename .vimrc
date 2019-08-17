@@ -40,9 +40,9 @@ hi Comment ctermfg=3
 "TABキーでタブ文字の代わりにスペース"
 set expandtab
 "インデント幅
-set shiftwidth=2
+set shiftwidth=4
 "ファイル内にあるタブ文字の表示幅
-set tabstop=2
+set tabstop=4
 "対応する括弧を強調表示
 set showmatch
 "改行時に入力された行の末尾に合わせて次の行のインデントを増減する
