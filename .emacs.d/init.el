@@ -95,10 +95,12 @@
   :config
   (add-to-list 'company-backends 'company-c-headers))
 
+;; themes
 (require 'kaolin-themes)
 (load-theme 'kaolin-dark t)
 (kaolin-treemacs-theme)
 
+;; gauche
 (modify-coding-system-alist 'process "gosh" '(utf-8 . utf-8))
 
 (electric-pair-mode 1)
