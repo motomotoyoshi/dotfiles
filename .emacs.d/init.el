@@ -51,7 +51,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(kaolin-themes company-c-headers company blackout el-get hydra leaf-keywords leaf)))
+   '(clojure-mode-extra-font-locking cider kaolin-themes company-c-headers company blackout el-get hydra leaf-keywords leaf)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -127,4 +127,13 @@
 
 (provide 'init)
 
+
+;(setq make-backup-files nil)
+(setq make-backup-files t)
+(setq initial-frame-alist
+      (append (list
+               '(height . 200))
+              initial-frame-alist))
+(setq default-frame-alist initial-frame-alist)
+(add-to-list 'image-types 'svg)
 ;;; init.el ends here
